@@ -1,6 +1,9 @@
+"use strict";
+
 const fsP = require('fs/promises');
 //[one.txt]
-const argv = process.argv.slice(2);
+
+const argv = process.argv.slice(2);\
 
 async function cat(path) {
   try {
@@ -12,4 +15,10 @@ async function cat(path) {
   }
 }
 
+
 cat(argv);
+
+// module.exports = {
+//   cat,
+//   argv
+// }
